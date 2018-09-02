@@ -1,0 +1,38 @@
+<html class="">
+<head>
+<link rel="stylesheet" type="text/css" href="slider.css" media="all">
+<link rel="stylesheet" href="slider.css">
+<script src="jquery-v1.8.2.js"></script>
+<script src="jquery-tweetscroll.js"></script>
+<script src="caroufredsel-carousel.js"></script>
+</head>
+<body>
+<div id="container" style="height: 189px;">
+<div class="">
+                <article class="grid_3  carousel-article">
+                    <div style="display: block; text-align: start; position: relative; top: auto; right: auto; bottom: auto; left: auto; width: 220px; height: 90px; margin: 0px; overflow: hidden;" class="caroufredsel_wrapper">
+                    <div class="caroufredsel_wrapper" style="display: block; text-align: left; float: none; position: absolute; top: 0px; right: -1300px; bottom: 0px; left: 0px; width: 220px; height: 90px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1540px; height: 90px;" id="foo3" class="carousel-li">
+                    <li>1</li>
+					<li>2</li>
+					<li>3</li>
+					</ul></div></div>
+                    <div class="clearfix"></div>
+                    <div style="display: block;" class="carousel-pagination" id="foo3_pag"><a href="#" class=""><span>1</span></a><a href="#" class=""><span>2</span></a><a href="#" class="selected"><span>3</span></a></div>
+                </article>
+        <script>
+            $("#foo3").carouFredSel({
+                items: 1,
+                auto: true,
+                scroll: 1,
+                pagination  : "#foo3_pag"
+            });
+        </script>
+</div>  </div>  
+<div class="clr"></div>       
+<script type="text/javascript">
+var get_height = window.innerHeight; 
+var get_height1 =  get_height - 25;
+var get_container = document.getElementById('container');
+get_container.style.height =  get_height1 + 'px';
+</script>
+</body></html>
